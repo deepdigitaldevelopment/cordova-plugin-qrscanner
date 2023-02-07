@@ -614,6 +614,8 @@ public class QRScanner extends CordovaPlugin implements BarcodeCallback {
                 if (mBarcodeView != null) {
                     mBarcodeView.stopDecoding();
                 }
+
+                getStatus(callbackContext);
             }
         });
         if(this.nextScanCallback != null)
