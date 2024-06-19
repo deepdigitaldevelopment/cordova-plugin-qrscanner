@@ -161,7 +161,19 @@ class QRScanner : CDVPlugin, AVCaptureMetadataOutputObjectsDelegate {
                     AVMetadataObject.ObjectType.ean8, 
                     AVMetadataObject.ObjectType.ean13, 
                     AVMetadataObject.ObjectType.code128, 
-                    AVMetadataObject.ObjectType.code39]
+                    AVMetadataObject.ObjectType.code39,
+                    AVMetadataObject.ObjectType.dataMatrix,
+                    AVMetadataObject.ObjectType.aztec,
+                    AVMetadataObject.ObjectType.pdf417,
+                    AVMetadataObject.ObjectType.microQR,
+                    AVMetadataObject.ObjectType.microPDF417,
+                    AVMetadataObject.ObjectType.codabar,
+                    AVMetadataObject.ObjectType.gs1DataBar,
+                    AVMetadataObject.ObjectType.gs1DataBarExpanded,
+                    AVMetadataObject.ObjectType.gs1DataBarLimited,
+                    AVMetadataObject.ObjectType.interleaved2of5,
+                    AVMetadataObject.ObjectType.upce
+                    ]
                 captureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
                 cameraView.addPreviewLayer(captureVideoPreviewLayer)
                 captureSession!.startRunning()
