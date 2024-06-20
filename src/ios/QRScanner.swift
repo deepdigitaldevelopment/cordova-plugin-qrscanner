@@ -244,7 +244,7 @@ class QRScanner : CDVPlugin, AVCaptureMetadataOutputObjectsDelegate {
         }
     }
 
-    // This method processes metadataObjects captured by iOS.
+    // This method processes metad ataObjects captured by iOS.
     func metadataOutput(_ captureOutput: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count == 0 || scanning == false {
             // while nothing is detected, or if scanning is false, do nothing.
@@ -277,7 +277,7 @@ class QRScanner : CDVPlugin, AVCaptureMetadataOutputObjectsDelegate {
         self.webView?.backgroundColor = UIColor.clear
     }
 
-    // ---- BEGIN EXTERNAL API ----
+    // ---- BEGIN EXTERNAL API ---- // PLACEHOLDERRR
 
     @objc func prepare(_ command: CDVInvokedUrlCommand){
         let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
