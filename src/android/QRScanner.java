@@ -484,8 +484,6 @@ public class QRScanner extends CordovaPlugin implements BarcodeCallback {
                 settings.setAutoFocusEnabled(true);
                 settings.setContinuousFocusEnabled(true);
                 settings.setFocusMode(CameraSettings.FocusMode.CONTINUOUS);
-                settings.setRequestedFramerate(30.0f);  // Set frame rate to 30 fps
-                settings.setAutoFocusInterval(500);  // Set autofocus interval to 500 ms
                 mBarcodeView.setCameraSettings(settings);
 
                 FrameLayout.LayoutParams cameraPreviewParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
